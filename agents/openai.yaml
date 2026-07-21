@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper"
+  short_description: "Draft and revise systems research papers"
+  default_prompt: "Use $paper to revise this systems paper section with full-paper context first."
