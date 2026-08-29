@@ -41,27 +41,15 @@ If the user only provides an isolated paragraph and no surrounding files are ava
 6. Deliver the requested artifact.
    If editing files, keep diffs scoped. If returning prose, provide the revised text directly and mention major semantic changes only when useful.
 
-## Academic Voice
+## Voice
 
-Write and revise in the register of top-tier computer systems papers.
+Write in the register of top-tier computer systems papers: precise about mechanisms, assumptions, workloads, and evidence; restrained about novelty and impact; explicit about the causal link between bottleneck, design choice, and measured result.
 
-Use language that is:
-
-- precise about system mechanisms, assumptions, workloads, and evidence
-- restrained about novelty and impact
-- explicit about causal links between bottlenecks, design choices, and measured results
-- concise enough for expert reviewers, without tutorial-style explanation
-- consistent with the paper's established terminology and contribution framing
-
-Avoid language that sounds like:
-
-- a technical blog post explaining a concept to beginners
-- product marketing or launch copy
-- documentation or how-to instructions
-- casual commentary about what the system "can easily" do
-- broad claims without experimental or architectural support
+Do not write like a technical blog, a tutorial, product marketing, or documentation. Do not comment casually on what the system "can easily" do.
 
 When polishing, optimize for reviewer trust rather than readability alone. A sentence is better if it states a narrower claim with clear evidence than if it sounds smoother but becomes less defensible.
+
+`references/systems-paper.md` carries the full prefer/avoid vocabulary lists; load it before any substantial rewrite.
 
 ## Academic Rhetorical Control
 
@@ -70,6 +58,8 @@ Do not flatten academic intent into blunt labels. When one factor is primary and
 When positioning against prior work, prefer assumption, scope, workload, or system-boundary contrasts over blanket negative claims. Avoid writing that existing systems "cannot" or "fail to" handle a problem unless the paper directly proves it. Instead, state what prior systems optimize for and what mismatch this paper exploits or addresses.
 
 Frame contributions as defensible claims, not component lists. A scheduler, cache, runtime, or optimizer is usually a mechanism; the contribution is the technical property, design separation, workload insight, or measured capability that the mechanism establishes.
+
+For worked examples of calibrating emphasis between competing factors, see the emphasis and hedging section of `references/systems-paper.md`.
 
 ## Section Direction and Cross-References
 
@@ -96,12 +86,12 @@ Load `references/systems-paper.md` when:
 - drafting or substantially revising abstract, introduction, design, implementation, evaluation, related work, or conclusion
 - adapting text for OSDI, SOSP, ATC, EuroSys, NSDI, SIGCOMM, ASPLOS, SIGMOD, VLDB, CIDR, or MLSys
 - evaluating whether the narrative, claims, contributions, or evidence are strong enough
+- calibrating emphasis between competing factors, or deciding how strongly to state a comparison
 - giving writing feedback beyond surface-level grammar
 
 ## Output Discipline
 
 - Keep edits technically defensible and aligned with available evidence.
-- Prefer direct, precise sentences over inflated claims.
 - Maintain one concept per paragraph unless the existing venue style suggests otherwise.
 - For LaTeX, avoid unnecessary reflow and preserve one complete prose sentence per source line when the repository asks for it.
 - When unsure whether a claim is supported, weaken it or mark the missing support explicitly.

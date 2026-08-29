@@ -161,6 +161,37 @@ Before rewriting a paragraph, identify its job:
 
 Then revise so the first sentence sets the job, the middle gives mechanism or evidence, and the final sentence advances the paper's argument. Keep terminology consistent with the paper map.
 
+## Emphasis and Hedging
+
+Reviewers read relative emphasis as a claim. Calibrate it to the evidence the draft actually has.
+
+The common case: two factors, A and B, both affect outcome C, and the draft believes A matters more.
+
+Without ablation or decomposition evidence, do not rank explicitly. Carry the difference through structure and verb strength instead.
+
+```text
+Too blunt: A is the important factor for C, and B matters less.
+Paper-like: C is driven primarily by A, which <mechanism>. B also contributes, but its effect is confined to <condition>.
+```
+
+Give A a full mechanism sentence and, when available, a measurement. Give B a single clause that names its scope, boundary, or the regime where it becomes visible. Order carries as much weight as wording: whatever comes first and receives causal explanation is read as primary.
+
+With ablation evidence, hedging becomes a weakness. State the split directly.
+
+```text
+Paper-like with evidence: Removing A costs TODO% of the improvement and removing B costs TODO%, so A accounts for most of the gain under <workload>.
+```
+
+Match the verb to the evidence level:
+
+- `dominates`, `accounts for most of` — requires ablation or decomposition
+- `is driven primarily by`, `is largely attributable to` — requires a clear measured gap
+- `contributes`, `improves`, `reduces` — requires a directional measurement
+- `also plays a role`, `is a secondary factor` — acceptable when the direction is observed but the magnitude is not
+- `may`, `is intended to` — no measurement yet; pair with `TODO`
+
+The same calibration applies to negative claims. "B is ineffective" requires evidence that B was measured and did not help. "B yields a smaller benefit under <workload>" usually does not, and is the safer sentence when only one workload was run.
+
 ## Style
 
 Prefer:
