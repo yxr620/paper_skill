@@ -47,11 +47,13 @@ Write in the register of top-tier computer systems papers: precise about mechani
 
 Do not write like a technical blog, a tutorial, product marketing, or documentation. Do not comment casually on what the system "can easily" do.
 
-When polishing, optimize for reviewer trust rather than readability alone. A sentence is better if it states a narrower claim with clear evidence than if it sounds smoother but becomes less defensible.
+When polishing, optimize for reviewer trust rather than readability alone. State the strongest claim the evidence supports, with the conditions needed to make it defensible; avoid both overstatement and unnecessary self-weakening.
 
 `references/systems-paper.md` carries the full prefer/avoid vocabulary lists; load it before any substantial rewrite.
 
 ## Academic Rhetorical Control
+
+When substantive writing revision is in scope, prioritize evidence presentation, the specific technical difference from prior work, and supported applicability before vocabulary or sentence complexity. Make existing scientific value easy to assess. For concrete checks and AI-assisted revision guidance, read the Evidence and Claim Presentation section of `references/systems-paper.md`.
 
 Do not flatten academic intent into blunt labels. When one factor is primary and another is secondary, express the difference through structure: put the primary factor earlier, give it more causal depth, mechanism, and evidence, and present secondary factors as constraints, boundary conditions, tradeoffs, or shorter supporting sentences. Avoid explicit rankings such as "A is important and B is less important" unless the paper has direct evidence for that ranking.
 

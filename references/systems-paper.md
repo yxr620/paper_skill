@@ -29,6 +29,7 @@ Gap in prior systems:
 Key insight:
 System / method:
 Main contributions:
+For each contribution: supporting evidence and conditions of validity:
 Primary workloads and metrics:
 Baselines:
 Strongest evidence:
@@ -54,6 +55,21 @@ Prefer measurable statements:
 
 - Weak: "The system is much faster."
 - Better: "The design reduces decode-stage overhead by TODO under the workload in Section X."
+
+## Evidence and Claim Presentation
+
+Apply these checks within the requested editing scope:
+
+- **Evidence:** For central results, connect the comparison, conditions, metric, and magnitude to the claim they support. In result prose and captions, preserve aggregate definitions, uncertainty, and material exceptions; do not substitute a best case for a typical result or an inferred explanation for a demonstrated cause.
+- **Novelty and confidence:** Locate novelty in a changed assumption, mechanism, or demonstrated capability. State measured outcomes directly; keep qualifications that express real uncertainty. Review hedges individually rather than deleting them globally or making every claim more cautious.
+- **Scope:** Explain the common conditions that connect evaluated settings when the evidence supports that connection. Separate demonstrated coverage, reasoned extrapolation, and untested cases; neither generalize from a benchmark without support nor describe all findings as merely preliminary.
+- **Revision control:** Resolve gaps in argument and evidence before polishing wording, then check factual and cross-section consistency. Identify missing research as such. When using AI feedback, require a passage and a checkable reason for each proposed change; a score increase alone is not a reason to keep rewriting. Stop when the scoped writing issues are resolved, and revisit only for concrete remaining problems.
+
+Example with placeholders, to use only when supported by the draft:
+
+> Under [condition], X reduces [metric] by [aggregate and value] relative to Y at the same [resource budget]. This supports [bounded claim]; [material exception] limits its applicability.
+
+These editorial priorities are informed by [Li et al., arXiv:2608.08975, §§4–5](https://arxiv.org/html/2608.08975v1#S4). The study found greater AI-review sensitivity to evidence and novelty framing than to linguistic complexity. Its full-manuscript interventions on ICLR submissions do not establish sentence-level effects or gains in human review or actual acceptance. The checks above are a writing workflow, not a validated score-optimization recipe.
 
 ## Section Roles
 
